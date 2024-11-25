@@ -1,12 +1,9 @@
 <script>
-  import viteLogo from "/vite.svg";
+  import Footer from "./components/Footer.svelte";
+  import Header from "./components/Header.svelte";
+  import Main from "./components/Main.svelte";
 </script>
 
-<main>
-  <a href="https://vite.dev" target="_blank" rel="noreferrer">
-    <img src={viteLogo} class="logo" alt="Vite Logo" />
-  </a>
-</main>
-
-<style>
-</style>
+<Header />
+<Main />
+<Footer />
