@@ -1,14 +1,19 @@
 <script>
   // Logic cho header nếu cần
+
+  import Navbar from "./Navbar.svelte";
+import Topbar from "./Topbar.svelte";
+
 </script>
 
 <header>
-  <h1>My Website</h1>
-  <nav>
+  <Topbar></Topbar>
+  <Navbar></Navbar>
+  <!-- <nav>
     <ul>
       <li><a href="/home">Home</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
-  </nav>
+  </nav> -->
 </header>
