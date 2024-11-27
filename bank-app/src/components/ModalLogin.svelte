@@ -4,14 +4,35 @@
 
 <div class="modal {show ? 'show' : ''}">
   <div class="login-group">
-    <a href="/" class="login-link">Digi Bank </a>
-    <div class="login-line"></div>
-    <a href="/" class="login-link">Digi Biz </a>
-    <div class="login-line"></div>
-    <a href="/" class="login-link">iBanking </a>
+    <a href="/" class="login-link"
+      ><div>
+        Mono-Digi Bank <div class="small-txt">Personal Banking</div>
+      </div>
+      <i class="bi bi-caret-right-fill"></i></a
+    >
     <div class="login-line"></div>
     <a href="/" class="login-link"
-      >Cashup <div class="login-line"></div></a
+      ><div>
+        Mono-Digi Biz
+        <div class="small-txt">SME Banking</div>
+      </div>
+      <i class="bi bi-caret-right-fill"></i></a
+    >
+    <div class="login-line"></div>
+    <a href="/" class="login-link"
+      ><div>
+        Mono-iBanking
+        <div class="small-txt">Institutional Banking</div>
+      </div>
+      <i class="bi bi-caret-right-fill"></i></a
+    >
+    <div class="login-line"></div>
+    <a href="/" class="login-link"
+      ><div>
+        Mono-Cashup
+        <div class="small-txt">Institutional Banking</div>
+      </div>
+      <i class="bi bi-caret-right-fill"></i></a
     >
   </div>
 </div>
@@ -56,7 +77,7 @@
 
   .modal .login-group .login-link {
     transition: all 0.3s ease-out 0s !important;
-    padding: 0.7rem 1.75rem;
+    padding: 0.1rem 0.5rem;
     margin-top: 0.2em;
     margin-bottom: 0.2rem;
     height: 100%;
@@ -65,13 +86,21 @@
     font-family: Manrope, sans-serif;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
     white-space: nowrap;
     display: flex;
-    position: relative;
-    align-items: center;
     border-radius: 5px;
+    position: relative;
+    text-align: left;
+  }
+
+  .modal .login-group .login-link .small-txt{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
   }
 
   .modal .login-group .login-line {
@@ -84,5 +113,16 @@
 
   .modal .login-group .login-link:hover {
     background-color: rgb(236 251 210);
+  }
+
+  .modal .login-group .login-link:hover i {
+    display: block;
+  }
+
+  .modal .login-group .login-link i {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 25%;
   }
 </style>

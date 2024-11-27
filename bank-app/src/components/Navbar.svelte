@@ -13,20 +13,28 @@
       <div class="col-md-7">
         <div class="menu">
           <a class="item active" href="/"
-            >Product&Service<i class="bi bi-caret-down-fill"></i></a
+            >Product&Service<i class="bi bi-caret-down-fill"></i>
+            <div class="item-line"></div></a
           >
           <a class="item" href="/"
-            >Tool&Utilities<i class="bi bi-caret-down-fill"></i></a
+            >Tool&Utilities<i class="bi bi-caret-down-fill"></i>
+            <div class="item-line"></div></a
           >
           <a class="item" href="/"
-            >Contact&Support<i class="bi bi-caret-down-fill"></i></a
+            >Contact&Support<i class="bi bi-caret-down-fill"></i>
+            <div class="item-line"></div></a
           >
-          <a class="item" href="/">Safe transaction principles</a>
+          <a class="item" href="/"
+            >Safe transaction principles <div class="item-line"></div></a
+          >
         </div>
       </div>
       <div class="col-md-2">
         <div class="login">
-          <button on:mouseenter={() => showModal = true} on:mouseleave={() => showModal = false}>
+          <button
+            on:mouseenter={() => (showModal = true)}
+            on:mouseleave={() => (showModal = false)}
+          >
             <i class="bi bi-box-arrow-in-right"></i>
             <span>Login</span>
             <ModalLogin show={showModal} />
@@ -70,10 +78,18 @@
     align-items: center;
   }
 
-  .navbar .menu .item:hover {
-    border-bottom: 3px solid #85b94d;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+  .navbar .menu .item .item-line {
+    display: none;
+    width: 100%;
+    height: 4px;
+    background-color: #85b94d;
+    position: absolute;
+    bottom: 0;
+    border-radius: 2px;
+  }
+
+  .navbar .menu .item:hover .item-line {
+    display: block;
   }
 
   .navbar .menu .item i {
