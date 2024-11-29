@@ -6,7 +6,8 @@
   let isHomePage = true;    
 </script>
 
-<main class:backgroundAll = {isHomePage}>
+<main>
+  <div class:backgroundAll = {isHomePage}></div>
   <Header />
   <Main />
   <Footer />
@@ -14,8 +15,11 @@
 
 <style>
   .backgroundAll {
+    position: fixed;
     height: 100%;
+    width: 100%;
     background-image: url('../public/img/backgroundAll.jpg');
     background-size: contain;
+    transform: scaleX(-1);
   }
 </style>

@@ -7,10 +7,10 @@
 <div class="navbar">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-2">
         <div class="logo"></div>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-8">
         <div class="menu">
           <a class="item active" href="/"
             >Product&Service<i class="bi bi-caret-down-fill"></i>
@@ -74,7 +74,6 @@
     height: 100%;
     position: relative;
     display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center;
   }
 
@@ -100,9 +99,10 @@
 
   .navbar .login {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100%;
+    width: 110%;
   }
 
   .row {

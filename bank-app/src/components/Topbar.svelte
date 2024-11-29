@@ -38,6 +38,7 @@
     width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
+    position: relative;
   }
   .left-menu {
     display: flex;
