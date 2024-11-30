@@ -23,7 +23,13 @@
           </div>
         </div>
 
-        <SearchBar handleClick={handleClickSearch} placeholder="Credits cards, consumer loans,..." width=80% m_top=1em></SearchBar>
+        <SearchBar
+          handleClick={handleClickSearch}
+          placeholder="Credits cards, consumer loans,..."
+          width=80%
+          m_top=1em
+          m_bot=1em
+        ></SearchBar>
       </div>
       <div class="col-md-6"></div>
     </div>

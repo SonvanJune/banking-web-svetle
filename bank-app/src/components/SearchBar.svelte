@@ -1,18 +1,23 @@
 <script>
-    export let placeholder;
-    export let handleClick = () => {}
-    export let width;
-    export let m_top;
+  export let placeholder;
+  export let handleClick = () => {};
+  export let width;
+  export let m_top;
+  export let m_bot;
 </script>
 
-<div class="home-search mt-5 mt-lg-4" on:click={handleClick} style="width: {width}; margin-top: {m_top} !important;">
+<div
+  class="home-search mt-5 mt-lg-4"
+  on:click={handleClick}
+  style="width: {width}; margin-top: {m_top} !important; margin-bottom: {m_bot} !important;"
+>
   <i class="bi bi-search"></i>
   <input
     type="email"
     readonly
     class="form-control"
     id="home-search"
-    placeholder={placeholder}
+    {placeholder}
   />
 </div>
 
@@ -25,7 +30,7 @@
     padding: 1rem 1.5rem;
     border-radius: 10rem;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
 
   .home-search i {
